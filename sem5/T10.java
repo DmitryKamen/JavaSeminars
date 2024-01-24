@@ -11,6 +11,7 @@ public class T10 {
         linkedHashMap.put("one", 1);
         linkedHashMap.put("two", 2);
         linkedHashMap.put("three", 3);
+        linkedHashMap.put("one", 4);
 
         // Итерирование элементов в порядке добавления с использованием entrySet()
         for (Map.Entry<String, Integer> entry : linkedHashMap.entrySet()) {
