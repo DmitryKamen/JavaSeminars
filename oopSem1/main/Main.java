@@ -15,8 +15,8 @@ import JavaSeminars.oopSem1.clients.Owner;
 public class Main {
     public static void main(String[] args) {
 
-        Animal cat = new Animal("Солнышко", new Owner("Сергей Валерьевич"),
-                LocalDate.of(2021, 10, 05), new Illness("Лишай")); //Создаём экземпляр класса
+        // Animal cat = new Animal("Солнышко", new Owner("Сергей Валерьевич"),
+        //         LocalDate.of(2021, 10, 05), new Illness("Лишай")); //Создаём экземпляр класса
         Animal cat1 = new Cat ("Персик", new Owner("Сергей Валерьевич"), //Создаём экземпляр класса по Домашней работе
         LocalDate.of(2021, 10, 05), new Illness("Лишай"),  5.0);
 
@@ -51,14 +51,14 @@ public class Main {
         //     System.out.println(i + " "+ animal);
         //     i++;
         // }
-        cat1.toGo(); // Домашнее Задание
-        cat1.fly(); // Домашнее Задание
-        cat1.swim(); // Домашнее Задание
-        fish1.toGo(); // Домашнее Задание
-        fish1.fly(); // Домашнее Задание
-        fish1.swim(); // Домашнее Задание
-        bird1.toGo(); // Домашнее Задание
-        bird1.fly(); // Домашнее Задание
-        bird1.swim(); // Домашнее Задание
+        // cat1.toGo(); // Домашнее Задание
+        // cat1.fly(); // Домашнее Задание
+        // cat1.swim(); // Домашнее Задание
+        // fish1.toGo(); // Домашнее Задание
+        // fish1.fly(); // Домашнее Задание
+        // fish1.swim(); // Домашнее Задание
+        // bird1.toGo(); // Домашнее Задание
+        // bird1.fly(); // Домашнее Задание
+        // bird1.swim(); // Домашнее Задание
     }
 }

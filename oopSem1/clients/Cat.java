@@ -2,7 +2,7 @@ package JavaSeminars.oopSem1.clients;
 
 import java.time.LocalDate;
 
-public class Cat extends Animal {
+public class Cat extends Animal implements Goable, Swimable {
 
     //Todo напомнить в чём разница в double
     Double discount;
@@ -34,6 +34,16 @@ public class Cat extends Animal {
     public String toString() {
         return super.toString()+"Discount("+discount+")";
     }
+
+    @Override
+    public void go() {
+        System.out.println("Can go " + getRunSpeed(15));
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("Can swim");
+    }
     // Домашнее
     // @Override
     // public void aktion() {
@@ -46,15 +56,15 @@ public class Cat extends Animal {
     //     System.out.println("Животное- " +nickName+ " Ходит"); 
     // }
     // Домашнее
-    @Override
-    public void fly() { 
-        System.out.println("Животное - " +nickName+ " Не Летает"); 
-    }
-    // Домашнее 
-    @Override
-    public void swim() {
-        System.out.println("Животное - " +nickName+ " Не Плавает");
-    }
+    // @Override
+    // public void fly() { 
+    //     System.out.println("Животное - " +nickName+ " Не Летает"); 
+    // }
+    // // Домашнее 
+    // @Override
+    // public void swim() {
+    //     System.out.println("Животное - " +nickName+ " Не Плавает");
+    // }
 
      
 

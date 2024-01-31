@@ -2,7 +2,7 @@ package JavaSeminars.oopSem1.clients;
 
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
 
     // protected видно в классе и во всех наследниках
     protected String nickName;
@@ -41,13 +41,15 @@ public class Animal {
     public void setIllness(Illness illness) {
         this.illness = illness;
     }
+    
+    // public abstract void eat(); Абстрактный метод
 
-    public void lifeCycle() {
-        wakeUp();
-        hunt();
-        eat();
-        sleep();
-    }
+    // public void lifeCycle() {
+    //     wakeUp();
+    //     hunt();
+    //     eat();
+    //     sleep();
+    // }
     // Домашнее
     // public void aktion() {
     //     toGo();
@@ -55,41 +57,41 @@ public class Animal {
     //     swim();
     // }
 
-    private void wakeUp() {
-        wakeUp("12:00");
-    }
+    // private void wakeUp() {
+    //     wakeUp("12:00");
+    // }
 
-    private void wakeUp(String time) {
-        System.out.println("Животное " + nickName + " проснулось в " + time);
-    }
+    // private void wakeUp(String time) {
+    //     System.out.println("Животное " + nickName + " проснулось в " + time);
+    // }
 
     public String getType() {
         return getClass().getSimpleName();
     }
 
-    private void hunt() {
-        System.out.println("Животное охотится!");
-    }
+    // private void hunt() {
+    //     System.out.println("Животное охотится!");
+    // }
 
-    private void eat() {
-        System.out.println("Животное ест!");
-    }
+    // private void eat() {
+    //     System.out.println("Животное ест!");
+    // }
 
-    private void sleep() {
-        System.out.println("Животное уснуло!");
-    }
+    // private void sleep() {
+    //     System.out.println("Животное уснуло!");
+    // }
     // Домашнее
-    public void toGo() {
-        System.out.println("Животное - " +nickName+ " Ходит");
-    }
-    // Домашнее
-    public void fly() {
-        System.out.println("Животное - " +nickName+ " Летает!");
-    }
-    // Домашнее
-    public void swim() {
-        System.out.println("Животное - " +nickName+ " Плавает!");
-    }
+    // public void toGo() {
+    //     System.out.println("Животное - " +nickName+ " Ходит");
+    // }
+    // // Домашнее
+    // public void fly() {
+    //     System.out.println("Животное - " +nickName+ " Летает!");
+    // }
+    // // Домашнее
+    // public void swim() {
+    //     System.out.println("Животное - " +nickName+ " Плавает!");
+    // }
 
     @Override
     public String toString() {
