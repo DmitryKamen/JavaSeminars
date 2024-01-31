@@ -5,20 +5,34 @@ package JavaSeminars.oopSem1.clients;
 
 
 
+
 public class VeterinaryClinic {
+    String title;
     
-    public static void whatCanDo(Animal animal){
+    public VeterinaryClinic(String title) {
+         
+            this.title = title;
+                      
+        }
+    
+    public VeterinaryClinic() {
+            this( "Аврора");
+        
+        }
+    
+    
+    public void whatCanDo(Animal animal){
         if (animal instanceof Goable) System.out.println("Ходит");
         if (animal instanceof Flyable) System.out.println("Летает");
         if (animal instanceof Swimable) System.out.println("Плавает");
     }
 
 
-    public static void doctorsControleNurseWorkind(Doctor doctor, Nurse nurse){
+    public void doctorsControleNurseWorkind(Doctor doctor, Nurse nurse){
         System.out.println("Доктор "+ doctor + " Поставил задачи и контролирует работу медсестры " + nurse);
     }
 
-    public static void nurseReports(Doctor doctor, Nurse nurse){
+    public void nurseReports(Doctor doctor, Nurse nurse){
         System.out.println("Медсеста "+ nurse + " Сообщает о состоянии больных в клинике доктору " + doctor);
     }
 

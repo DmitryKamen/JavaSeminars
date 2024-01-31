@@ -24,14 +24,14 @@ public class Main2 {
         LocalDate.of(2021, 10, 05), new Illness("Неизвестно"));
         Animal bird1 = new Bird ("Сокол", new Owner("Сергей Валерьевич"), //Создаём экземпляр класса по Домашней работе
         LocalDate.of(2021, 10, 05), new Illness("Неизвестно"));
-
+        VeterinaryClinic v = new VeterinaryClinic();
         Doctor d1 = new Doctor("Дмитрий"  , "Валерьевич");
         Nurse n1 = new Nurse("Марина"  , "Дмитриевна");
 
-        VeterinaryClinic.whatCanDo(cat1); // проверка работы кода 
+        v.whatCanDo(cat1); // проверка работы кода 
         ((Cat) cat1).go(); // проверка работы кода 
-        VeterinaryClinic.doctorsControleNurseWorkind(d1, n1);
-        VeterinaryClinic.nurseReports(d1, n1);
+        v.doctorsControleNurseWorkind(d1, n1);
+        v.nurseReports(d1, n1);
         d1.makesDiagnosis(cat1); // решен вопрос со статикой это хорошо
     }
 }
