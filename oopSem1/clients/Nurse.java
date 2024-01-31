@@ -1,12 +1,12 @@
 package JavaSeminars.oopSem1.clients;
 
 public class Nurse {
-    String fistName;
-    String lastName;
+    private String firstName;
+    private String lastName;
 
-    public Nurse(String fistName, String lastName) {
+    public Nurse(String firstName, String lastName) {
          
-        this.fistName = fistName;
+        this.firstName = firstName;
         this.lastName = lastName;
               
     }
@@ -16,12 +16,20 @@ public class Nurse {
     
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
     public void conductsSurveillance(Animal nickName) {
-        System.out.println("Животное - " +nickName+ "Под наблюдением, указания доктора выполняются");
+        System.out.println("Животное - " +nickName.getNickName()+ "Под наблюдением, указания доктора выполняются");
     }
 
     @Override
     public String toString() {
-        return String.format("firstName = %s, lastName = %s", fistName, lastName);
+        return String.format("firstName = %s, lastName = %s", firstName, lastName);
     }
 }

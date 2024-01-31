@@ -1,15 +1,13 @@
 package JavaSeminars.oopSem1.main2;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+
 
 import JavaSeminars.oopSem1.clients.Animal;
 import JavaSeminars.oopSem1.clients.Bird;
 import JavaSeminars.oopSem1.clients.Cat;
 import JavaSeminars.oopSem1.clients.Doctor;
 import JavaSeminars.oopSem1.clients.Fish;
-import JavaSeminars.oopSem1.clients.Goable;
 import JavaSeminars.oopSem1.clients.Illness;
 import JavaSeminars.oopSem1.clients.Nurse;
 import JavaSeminars.oopSem1.clients.Owner;
@@ -28,7 +26,8 @@ public class Main2 {
         Doctor d1 = new Doctor("Дмитрий"  , "Валерьевич");
         Nurse n1 = new Nurse("Марина"  , "Дмитриевна");
 
-        v.whatCanDo(cat1); // проверка работы кода 
+        v.whatCanDo(cat1); // проверка работы кода
+        v.whatCanDo(bird1); // проверка работы кода  
         ((Cat) cat1).go(); // проверка работы кода 
         v.doctorsControleNurseWorkind(d1, n1);
         v.nurseReports(d1, n1);

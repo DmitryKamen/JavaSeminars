@@ -22,20 +22,27 @@ public class VeterinaryClinic {
     
     
     public void whatCanDo(Animal animal){
-        if (animal instanceof Goable) System.out.println("Ходит");
-        if (animal instanceof Flyable) System.out.println("Летает");
-        if (animal instanceof Swimable) System.out.println("Плавает");
+        if (animal instanceof Goable) System.out.println( animal.getNickName() + " Ходит");
+        if (animal instanceof Flyable) System.out.println(animal.getNickName()+ " Летает");
+        if (animal instanceof Swimable) System.out.println(animal.getNickName()+ " Плавает");
     }
 
 
     public void doctorsControleNurseWorkind(Doctor doctor, Nurse nurse){
-        System.out.println("Доктор "+ doctor + " Поставил задачи и контролирует работу медсестры " + nurse);
+        System.out.println("Доктор "+ doctor.getFirstName() + " Поставил задачи и контролирует работу медсестры " + nurse.getFirstName());
     }
 
     public void nurseReports(Doctor doctor, Nurse nurse){
-        System.out.println("Медсеста "+ nurse + " Сообщает о состоянии больных в клинике доктору " + doctor);
+        System.out.println("Медсеста "+ nurse.getFirstName() + " Сообщает о состоянии больных в клинике доктору " + doctor.getFirstName());
     }
 
+    @Override
+    public String toString() {
+        return String.format("title = %s",  title);
+    }
+}
+
+    
     // public ArrayList<Animal> takeList(Animal animal) { 
     //     List<Animal> list = new ArrayList<Animal>();
     //     list.add(animal);
@@ -67,5 +74,5 @@ public class VeterinaryClinic {
     //     return result;
     // }
     
-}
+
 
