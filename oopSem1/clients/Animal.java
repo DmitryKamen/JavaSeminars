@@ -73,9 +73,9 @@ public abstract class Animal {
     //     System.out.println("Животное охотится!");
     // }
 
-    // private void eat() {
-    //     System.out.println("Животное ест!");
-    // }
+    public void eat() {
+        // System.out.println("Животное ест!");
+    }
 
     // private void sleep() {
     //     System.out.println("Животное уснуло!");

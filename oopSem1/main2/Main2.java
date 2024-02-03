@@ -1,13 +1,16 @@
 package JavaSeminars.oopSem1.main2;
 
 import java.time.LocalDate;
-
+import java.util.ArrayList;
+import java.util.List;
 
 import JavaSeminars.oopSem1.clients.Animal;
 import JavaSeminars.oopSem1.clients.Bird;
 import JavaSeminars.oopSem1.clients.Cat;
 import JavaSeminars.oopSem1.clients.Doctor;
+import JavaSeminars.oopSem1.clients.Dog;
 import JavaSeminars.oopSem1.clients.Fish;
+import JavaSeminars.oopSem1.clients.Goable;
 import JavaSeminars.oopSem1.clients.Illness;
 import JavaSeminars.oopSem1.clients.Nurse;
 import JavaSeminars.oopSem1.clients.Owner;
@@ -32,5 +35,18 @@ public class Main2 {
         v.doctorsControleNurseWorkind(d1, n1);
         v.nurseReports(d1, n1);
         d1.makesDiagnosis(cat1); // решен вопрос со статикой это хорошо
+
+        List<Goable> list = new ArrayList<>();
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+        list.add(cat);
+        list.add(dog);
+        System.out.println(list);
+        Animal animal = new Animal() { // анонимный класс
+            @Override
+            public void eat() {
+
+            }
+        };
     }
 }
