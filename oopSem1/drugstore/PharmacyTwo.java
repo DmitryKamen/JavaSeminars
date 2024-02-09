@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class PharmacyTwo implements Iterable<Component>,Comparable<PharmacyTwo> {
-    private List<Component> components = new ArrayList<>();
+    List<Component> components = new ArrayList<>();
     private int index = 0;
     private int pharmacyPower;
     private Double pharmacyWeight = 0.0;
@@ -47,6 +47,14 @@ public class PharmacyTwo implements Iterable<Component>,Comparable<PharmacyTwo> 
             return (int)(this.pharmacyWeight - o.pharmacyWeight);
         }
         else return this.pharmacyPower - o.pharmacyPower;
+    }
+
+    public int getPharmacyPower() {
+        return pharmacyPower;
+    }
+
+    public Double getPharmacyWeight() {
+        return pharmacyWeight;
     }
 }
 

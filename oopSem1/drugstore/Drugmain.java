@@ -3,6 +3,8 @@ package JavaSeminars.oopSem1.drugstore;
 
 import java.util.*;
 
+import org.w3c.dom.Comment;
+
 import JavaSeminars.oopSem1.drugstore.components.Azitronite;
 import JavaSeminars.oopSem1.drugstore.components.Penicillin;
 import JavaSeminars.oopSem1.drugstore.components.Water;
@@ -36,12 +38,17 @@ public class Drugmain {
         pharmacies.add(p1);
         pharmacies.add(p2);
         pharmacies.add(p3);
-        System.out.println(pharmacies);
+        // System.out.println(pharmacies);
 
         Collections.sort(pharmacies);
-        System.out.println(pharmacies);
- 
+        // System.out.println(pharmacies);
         
+        
+        Collections.sort(pharmacies);
+        
+        
+
+
         // Пример с итератором   
         // Iterator<Component> iterator = p1;
         // while (iterator.hasNext()) {
@@ -52,6 +59,8 @@ public class Drugmain {
         // for (Component c : p2) {
         //     System.out.println(c);
         // }
+
+        
 
     }
 }
